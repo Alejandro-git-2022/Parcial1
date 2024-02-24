@@ -48,6 +48,8 @@ public class CalcularTotal extends AppCompatActivity {
         String tomateCantidadStr = tomateQuantityEditText.getText().toString().trim();
         String cebollaCantidadStr = cebollaQuantityEditText.getText().toString().trim();
 
+
+        //Mensaje de error, en caso de no cumplir con los datos
         if (tomateCantidadStr.isEmpty() || cebollaCantidadStr.isEmpty()) {
             // Mostrar un mensaje de error si alguno de los campos está vacío
             Toast.makeText(this, "Por favor ingresa la cantidad de tomate y cebolla", Toast.LENGTH_SHORT).show();
